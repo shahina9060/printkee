@@ -41,43 +41,43 @@ const seedDatabase = async () => {
     }
     console.log("Subcategories inserted!");
 
-    // for (const [categoryName, subcatMap] of Object.entries(products)) {
-    //     for (const [subcatName, items] of Object.entries(subcatMap)) {
-    //         const subcategory = subcategoryDocs.find(s => s.name === subcatName);
-    //         if (!subcategory) continue;
+    for (const [categoryName, subcatMap] of Object.entries(products)) {
+        for (const [subcatName, items] of Object.entries(subcatMap)) {
+            const subcategory = subcategoryDocs.find(s => s.name === subcatName);
+            if (!subcategory) continue;
 
-    //         await Product.insertMany(items.map(item => ({
-    //             name: item.name,
-    //             imageUrl: item.imageUrl,
-    //             subcategory: subcategory._id,  // 🔹 Fixed field name
-    //         })));
-    //     }
-    // }
+            await Product.insertMany(items.map(item => ({
+                name: item.name,
+                imageUrl: item.imageUrl,
+                subcategory: subcategory._id,  // 🔹 Fixed field name
+            })));
+        }
+    }
 
-for (const [categoryName, subcatMap] of Object.entries(products)) {
-  for (const [subcatName, items] of Object.entries(subcatMap)) {
-    const subcategory = subcategoryDocs.find(s => s.name === subcatName);
-    if (!subcategory) continue;
+// for (const [categoryName, subcatMap] of Object.entries(products)) {
+//   for (const [subcatName, items] of Object.entries(subcatMap)) {
+//     const subcategory = subcategoryDocs.find(s => s.name === subcatName);
+//     if (!subcategory) continue;
 
-    await Product.insertMany(items.map(item => ({
-      productCode: item.productCode || `CODE-${Math.floor(Math.random() * 1000000)}`,
-      productName: item.productName || item.name || "Unnamed Product",
-      productDescription: item.productDescription || "",
-      productType: item.productType || "",
-      proMinQuantity: item.proMinQuantity || "",
-      fabricType: item.fabricType || "",
-      imageUrl: item.imageUrl || [],
-      productSize: item.productSize || "",
-      productColor: item.productColor || "",
-      productPrice: item.productPrice || 0,
-      tags: item.tags || "",
-      csvFileName: item.csvFileName || "",
-      capacity: item.capacity || "",
-      materialType: item.materialType || "",
-      subcategory: subcategory._id
-    })));
-  }
-}
+//     await Product.insertMany(items.map(item => ({
+//       productCode: item.productCode || `CODE-${Math.floor(Math.random() * 1000000)}`,
+//       productName: item.productName || item.name || "Unnamed Product",
+//       productDescription: item.productDescription || "",
+//       productType: item.productType || "",
+//       proMinQuantity: item.proMinQuantity || "",
+//       fabricType: item.fabricType || "",
+//       imageUrl: item.imageUrl || [],
+//       productSize: item.productSize || "",
+//       productColor: item.productColor || "",
+//       productPrice: item.productPrice || 0,
+//       tags: item.tags || "",
+//       csvFileName: item.csvFileName || "",
+//       capacity: item.capacity || "",
+//       materialType: item.materialType || "",
+//       subcategory: subcategory._id
+//     })));
+//   }
+// }
 
 
       
@@ -92,5 +92,5 @@ for (const [categoryName, subcatMap] of Object.entries(products)) {
 };
 
 // Run the script
-// seedDatabase();
-module.exports = seedDatabase;
+seedDatabase();
+// module.exports = seedDatabase;
