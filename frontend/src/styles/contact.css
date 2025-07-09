@@ -1,0 +1,48 @@
+/* src/components/ContactSection.css */
+.contact-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color:gray;
+    background-color: #b8b2b270;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.contact-section p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 30px;
+    }
+
+    .contact-section h2 {
+        font-size: 1.5em;
+    }
+
+    .contact-section p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 1.2em;
+    }
+
+    .contact-section p {
+        font-size: 0.8em;
+    }
+}

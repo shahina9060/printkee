@@ -1,0 +1,45 @@
+.whatsapp-mail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: fixed;
+    right: 35px;
+    bottom: 100px;
+    /* z-index: 1000; */
+  }
+  
+  /* Common styles for both icons */
+  .whatsApp-icon,
+  .email-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* WhatsApp Icon */
+  .whatsApp-icon {
+    color: white;
+    background-color: #25d366;
+  }
+  
+  /* Email Icon */
+  .email-icon {
+    color: #0073e6;
+    background-color: #f1f2f3;
+  }
+  
+  /* Hover Effect */
+  .whatsApp-icon:hover,
+  .email-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  

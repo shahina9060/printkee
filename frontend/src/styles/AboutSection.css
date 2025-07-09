@@ -1,0 +1,131 @@
+.about-section {
+    background-color: #ececec;
+    padding: 60px 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    width: 100%;
+  }
+  .about-video {
+    width: 100%;        /* Keep full width */
+    height: 200px;      /* Adjust this to your desired height */
+    object-fit: cover;  /* Ensures it crops the video without distortion */
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }  
+  .about-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .about-title {
+    text-align: center;
+    font-family: gallery_modernregular !important;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+    font-size: 4rem;
+    color: rgb(54, 54, 54);
+    padding: 8px;
+    /* background: linear-gradient(90deg, #654cf3 0%, #eca60ece 50%, #654cf3 100%); */
+}
+  
+  .about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .feature-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    color: #666;
+  }
+  /* ------------------------------------------- */
+
+  .testimonial-section {
+    text-align: center;
+    margin-top: 60px;
+    background: #fff8ec;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .woodmart-title-container {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #5a855a; /* a dark green hex code */
+
+    margin-top: 30px;
+  }
+  
+  .testimonial-swiper {
+    max-width: 700px;
+    margin: 0 ;
+  }
+  
+  .testimonial-slide {
+    padding: 20px;
+  
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    height: 400px;
+  }
+  
+  .stars {
+    color: gold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 25px;
+  }
+  
+  .testimonial-footer {
+    font-weight: 500;
+    color: #222;
+  }
+  
+  .testimonial-footer span {
+    color: #888;
+    font-weight: normal;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #000;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #bbb;
+    opacity: 1;
+    margin-top:0;
+    
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #333;
+    margin-top: 0;
+  }
+  

@@ -1,0 +1,113 @@
+/* .upload-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .upload-form input[type="file"],
+  .upload-form select,
+  .upload-form button {
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .upload-form select:focus,
+  .upload-form input[type="file"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+    
+  }
+  
+  .upload-form button {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .upload-form button:hover {
+    background-color: #3a78c2;
+  }
+   */
+
+   .upload-form {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="file"],
+  .form-group select {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group input[type="file"] {
+    padding: 0.4rem 0.4rem;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #fff;
+  }
+  
+  .form-group small {
+    margin-top: 0.25rem;
+    color: red;
+    font-size: 0.8rem;
+  }
+  
+  .form-group.full-width {
+    grid-column: span 2;
+  }
+  
+  button[type="submit"] {
+    padding: 0.75rem 1.2rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
