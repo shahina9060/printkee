@@ -18,7 +18,7 @@ app.use(cookieParser()); // <--- Add this line
 
 
 app.use(cors({
-  origin: "http://localhost:3000", // ✅ specific origin, not '*'
+  origin: "https://printkee-frontends.onrender.com", // ✅ specific origin, not '*'
   credentials: true               // ✅ allow credentials (cookies)
 }));
 app.use(express.static("public")); // Serve uploaded images
