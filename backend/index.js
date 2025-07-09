@@ -31,6 +31,19 @@ app.use("/uploads/images", express.static(path.join(__dirname, "public/uploads/i
 //   res.send('Backend is running!');
 // });
 
+const seedDatabase = require('./seed');
+app.get("/seed", async (req, res) => {
+  try {
+    await seedDatabase();
+    res.send("✅ Database seeded successfully!");
+  } catch (err) {
+    console.error("Seeding error:", err);
+    res.status(500).send("❌ Failed to seed database.");
+  }
+});
+
+
+
 app.use(router)  // Routes
 
 
