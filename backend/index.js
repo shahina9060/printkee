@@ -22,8 +22,8 @@ app.use(cors({
   credentials: true               // ✅ allow credentials (cookies)
 }));
 app.use(express.static("public")); // Serve uploaded images
-// const path = require("path");
-// app.use("/uploads/images", express.static(path.join(__dirname, "public/uploads/images")));
+const path = require("path");
+app.use("/uploads/images", express.static(path.join(__dirname, "public/uploads/images")));
 
 
 
