@@ -16,5 +16,5 @@ frontend/.env
 frontend/build/
 
 # Ignore uploaded files
-backend/public/uploads/
+# backend/public/uploads/
 
